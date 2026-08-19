@@ -1,0 +1,11 @@
+n = int(input("Enter number of tuples: "))
+
+lst = []
+
+for i in range(n):
+    tup = tuple(map(int, input(f"Enter elements of tuple {i+1}: ").split()))
+    lst.append(tup)
+
+result = [sum(t) for t in lst]
+
+print("Sum of each tuple:", result)
